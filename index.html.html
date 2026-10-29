@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velora High School | Discover Our School</title>
+<style>
+:root {
+  --site-primary: #253456;
+  --site-secondary: #ffd42f;
+  --site-background: #f6f7fb;
+  --site-on-primary: #ffffff;
+  --site-on-secondary: #202d4a;
+  --site-on-background: #202d4a;
+  --site-font-body: "Trebuchet MS", Arial, sans-serif;
+  --site-font-heading: "Trebuchet MS", Arial, sans-serif;
+  --site-heading-scale: 1;
+  --site-spacing-scale: 1;
+  --site-radius-scale: 1;
+  --site-decoration-opacity: 1;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--site-on-background); background: var(--site-background); font-family: var(--site-font-body); line-height: 1.6; }
+.site { min-height: 100vh; background-color: light-dark(#f6f7fb, #111827); color: light-dark(#202d4a, #f3f4f6); }
+.hero { background: var(--site-primary); color: var(--site-on-primary); padding: calc(4rem * var(--site-spacing-scale)) max(6vw, 1.25rem); position: relative; overflow: hidden; }
+.hero:after { content:""; position:absolute; width:320px; height:320px; border:36px solid var(--site-secondary); border-radius:50%; right:-100px; top:-150px; opacity:calc(.18 * var(--site-decoration-opacity)); }
+.kicker { color: var(--site-secondary); text-transform:uppercase; letter-spacing:.18em; font-weight:700; font-size:.85rem; }
+h1,h2,h3 { font-family:var(--site-font-heading); line-height:1.15; }
+h1 { font-size:calc(clamp(2.4rem, 6vw, 4.7rem) * var(--site-heading-scale)); max-width:800px; margin:.5rem 0 1rem; }
+.hero p { max-width:680px; font-size:1.15rem; color:#e4e9f5; }
+.pill { display:inline-block; background:var(--site-secondary); color:var(--site-on-secondary); padding:.55rem 1rem; border-radius:999px; font-weight:700; margin-top:1rem; }
+main { max-width:1120px; margin:auto; padding:2.5rem 1.25rem 4rem; }
+.intro { display:grid; grid-template-columns:1.2fr .8fr; gap:2rem; align-items:center; margin-bottom:2.5rem; }
+.intro-card { background:light-dark(#fff,#1f2937); padding:1.5rem; border-radius:calc(22px * var(--site-radius-scale)); border:1px solid light-dark(#e2e6ef,#374151); }
+h2 { font-size:calc(2rem * var(--site-heading-scale)); margin:.2rem 0 1rem; }
+h3 { font-size:1.2rem; margin:.5rem 0; }
+.section-label { color:#9b7900; font-weight:800; text-transform:uppercase; letter-spacing:.12em; font-size:.8rem; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; margin:1.25rem 0 3rem; }
+.card { background:light-dark(#fff,#1f2937); border:1px solid light-dark(#e2e6ef,#374151); padding:1.35rem; border-radius:calc(18px * var(--site-radius-scale)); }
+.emoji { width:44px; height:44px; display:grid; place-items:center; background:var(--site-primary); color:#fff; border-radius:14px; font-size:1.35rem; }
+.card p,.intro-card p { margin:.4rem 0; }
+ul { padding-left:1.2rem; margin:.6rem 0 0; }
+li { margin:.3rem 0; }
+.note { border-left:5px solid var(--site-secondary); padding:.75rem 1rem; background:light-dark(#fff8d7,#303044); border-radius:0 12px 12px 0; }
+footer { background:var(--site-primary); color:#e4e9f5; padding:2rem 1.25rem; text-align:center; }
+footer strong { color:var(--site-secondary); }
+.small { font-size:.9rem; opacity:.85; }
+@media(max-width:760px) { .intro { grid-template-columns:1fr; } .grid { grid-template-columns:1fr; } .hero { padding-top:3rem; padding-bottom:3rem; } }
+</style>
+</head>
+<body>
+<div class="site">
+<header class="hero">
+  <div class="kicker">Learn · Explore · Discover</div>
+  <h1>Welcome to Velora High School</h1>
+  <p>A modern school concept where students can build knowledge, discover their talents, and grow through learning, creativity, teamwork, and new experiences.</p>
+  <span class="pill">Discover our school</span>
+</header>
+<main>
+  <section class="intro">
+    <div>
+      <div class="section-label">About our school</div>
+      <h2>A place to grow and achieve</h2>
+      <p>At Velora High School, learning is about more than lessons. Students are encouraged to ask questions, explore ideas, work together, and develop confidence in their abilities.</p>
+      <p>This page expands on the school brochure with an overview of learning spaces, student activities, and support for school life.</p>
+    </div>
+    <div class="intro-card">
+      <h3>Our approach</h3>
+      <p><strong>Curiosity:</strong> Explore new ideas and ask questions.</p>
+      <p><strong>Creativity:</strong> Express yourself through art, music, and projects.</p>
+      <p><strong>Community:</strong> Respect others, cooperate, and make everyone feel welcome.</p>
+      <p><strong>Growth:</strong> Learn from challenges and celebrate progress.</p>
+    </div>
+  </section>
+  <div class="section-label">Explore</div>
+  <h2>Learning and school life</h2>
+  <section class="grid">
+    <article class="card"><div class="emoji">📚</div><h3>Library & Study Areas</h3><p>A welcoming space for independent study, reading, and research.</p><ul><li>Quiet study area</li><li>Reading and research space</li><li>Group learning when permitted</li></ul></article>
+    <article class="card"><div class="emoji">🧪</div><h3>Science Labs</h3><p>Practical learning can help students connect classroom ideas with real-world questions.</p><ul><li>Physics experiments</li><li>Chemistry activities</li><li>Biology investigations</li></ul></article>
+    <article class="card"><div class="emoji">🏀</div><h3>Sports Facilities</h3><p>Sport encourages teamwork, perseverance, and a healthy balance with study.</p><ul><li>Indoor sports hall</li><li>Team games and practice</li><li>School tournaments</li></ul></article>
+    <article class="card"><div class="emoji">🎨</div><h3>Art & Music Rooms</h3><p>Creative spaces where students can practise skills and share their ideas.</p><ul><li>Painting and visual art</li><li>Music practice</li><li>Creative group projects</li></ul></article>
+    <article class="card"><div class="emoji">🎭</div><h3>Clubs & Activities</h3><p>Students can explore interests and get involved in school community life.</p><ul><li>Basketball Club</li><li>Music Club</li><li>Painting Club</li><li>Drama Club</li><li>Concerts and tournaments</li></ul></article>
+    <article class="card"><div class="emoji">🤝</div><h3>Student Support</h3><p>Asking for help is part of learning. Students can speak to trusted teachers or a school counsellor when they need guidance.</p><ul><li>Study planning for exams</li><li>Help with challenging subjects</li><li>Support with settling into school</li></ul></article>
+  </section>
+  <section class="intro">
+    <div>
+      <div class="section-label">Making progress</div>
+      <h2>How to deal with school challenges</h2>
+      <p>School can bring new challenges, and small practical steps can help students manage them.</p>
+    </div>
+    <div class="intro-card">
+      <p><strong>Exam stress:</strong> Make a realistic study plan and break tasks into smaller steps.</p>
+      <p><strong>Anxiety:</strong> Talk with a trusted adult, teacher, or school counsellor.</p>
+      <p><strong>School adaptation:</strong> Join an activity and introduce yourself to classmates.</p>
+      <p><strong>Difficult subjects:</strong> Ask your teacher questions and arrange extra practice.</p>
+      <p><strong>Relaxation:</strong> Make time for sports, art, music, and rest.</p>
+    </div>
+  </section>
+  <section class="note">
+    <strong>Note:</strong> This is a sample school-information page created from the brochure. Details such as the school's actual address, staff, tuition, admissions dates, contact information, and official policies have not been provided, so they are not invented here.
+  </section>
+</main>
+<footer>
+  <strong>VELORA HIGH SCHOOL</strong>
+  <div>Learn · Explore · Discover</div>
+  <p class="small">Sample school information page · Add verified contact and admissions details before public use.</p>
+</footer>
+</div>
+</body>
+</html>
